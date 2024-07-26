@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,26 +13,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LightTrafic_2024" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="41n-vY-Q7V">
-                                <rect key="frame" x="110" y="40" width="100" height="360"/>
+                                <rect key="frame" x="129" y="40" width="117" height="412.5"/>
                                 <subviews>
                                     <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="sLY-o1-EeV" userLabel="RedLigth">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="117.5"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="sLY-o1-EeV" secondAttribute="height" multiplier="1:1" id="dgz-a2-2Sy"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-3L-ldk" userLabel="GreenLight">
-                                        <rect key="frame" x="0.0" y="130" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wmt-cY-PC7" userLabel="YelowLight">
-                                        <rect key="frame" x="0.0" y="260" width="100" height="100"/>
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-3L-ldk" userLabel="YellowLight">
+                                        <rect key="frame" x="0.0" y="147.5" width="117" height="117.5"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wmt-cY-PC7" userLabel="GreenLight">
+                                        <rect key="frame" x="0.0" y="295" width="117" height="117.5"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -43,11 +43,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIT-PR-qEQ">
-                                <rect key="frame" x="99" y="478.5" width="122" height="39.5"/>
+                                <rect key="frame" x="116" y="571" width="143" height="46"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="swithLightButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDW-7m-fpl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,6 +66,12 @@
                             <constraint firstItem="DIT-PR-qEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ymM-0g-s9t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="wmt-cY-PC7" id="IEd-pA-cyW"/>
+                        <outlet property="redLightView" destination="sLY-o1-EeV" id="4dO-yN-XrK"/>
+                        <outlet property="swithLightButton" destination="DIT-PR-qEQ" id="se7-jF-wwE"/>
+                        <outlet property="yellowLightView" destination="tBV-3L-ldk" id="m8m-ze-lQa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
