@@ -43,7 +43,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIT-PR-qEQ">
-                                <rect key="frame" x="99" y="493.5" width="122" height="34.5"/>
+                                <rect key="frame" x="99" y="478.5" width="122" height="39.5"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -54,11 +54,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="41n-vY-Q7V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Bg-hh-pyK"/>
+                            <constraint firstItem="DIT-PR-qEQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="35:284" id="AZS-QS-lNX"/>
                             <constraint firstItem="sLY-o1-EeV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:142" id="FJQ-gg-Znm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DIT-PR-qEQ" secondAttribute="bottom" constant="40" id="cPx-1n-eIV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DIT-PR-qEQ" secondAttribute="bottom" constant="50" id="cPx-1n-eIV"/>
+                            <constraint firstItem="DIT-PR-qEQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="61:284" id="gEB-5u-kps"/>
                             <constraint firstItem="41n-vY-Q7V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lxQ-XO-uvU"/>
                             <constraint firstItem="DIT-PR-qEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="spo-ro-p32"/>
-                            <constraint firstItem="DIT-PR-qEQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="61:284" id="vUC-PM-GjJ"/>
                             <constraint firstItem="DIT-PR-qEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ymM-0g-s9t"/>
                         </constraints>
                     </view>
